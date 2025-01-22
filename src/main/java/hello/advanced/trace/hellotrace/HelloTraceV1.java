@@ -20,7 +20,7 @@ public class HelloTraceV1 {
         TraceId traceId = new TraceId();
         Long startTimeMs = System.currentTimeMillis();
         log.info("[{}] {}{}", traceId.getId(), addSpace(START_PREFIX, traceId.getLevel()), message);
-        // addSpace = > 화살표 표현 level
+        // addSpace = > 화살표 표현 level dd
         return new TraceStatus(traceId, startTimeMs, message);
     }
 
